@@ -1,0 +1,42 @@
+.ranking-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ranking-section h2 {
+    margin-top: 0;
+    color: #1c3d5a;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Junta as bordas das células */
+    font-size: 16px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #f0f2f5;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9; /* Efeito ao passar o mouse */
+}
+
+td.final-score {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007bff;
+}

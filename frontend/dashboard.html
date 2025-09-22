@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRO.AI - Dashboard de Análise</title>
+    <link rel="stylesheet" href="css/dashboard.style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo AIRO.AI" class="logo">
+            <h1>AIRO.AI</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="ranking.html">Ranking</a>
+            <a href="vagas.html">Vagas Abertas</a>
+            <a href="configuracoes.html">Configurações</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        
+        <section class="analysis-section">
+            <h2>Análise de Candidato</h2>
+            
+            <div class="input-row">
+                <!-- Dropdown para a Profissão -->
+                <div class="input-group">
+                    <label for="profissao">Profissão</label>
+                    <select id="profissao" name="profissao">
+                        <option value="" disabled selected>Selecione a profissão...</option>
+                        <option value="dev_backend">Desenvolvedor Backend</option>
+                        <option value="dev_frontend">Desenvolvedor Frontend</option>
+                        <option value="dev_fullstack">Desenvolvedor Full-Stack</option>
+                        <option value="dba">Administrador de Banco de Dados (DBA)</option>
+                        <option value="data_scientist">Cientista de Dados</option>
+                        <option value="data_engineer">Engenheiro de Dados</option>
+                        <option value="software_engineer">Engenheiro de Software</option>
+                        <option value="devops">Engenheiro DevOps</option>
+                        <option value="qa_analyst">Analista de QA / Testes</option>
+                    </select>
+                </div>
+
+                <!-- Dropdown para o Nível -->
+                <div class="input-group">
+                    <label for="nivel">Nível do Candidato</label>
+                    <select id="nivel" name="nivel">
+                        <option value="" disabled selected>Selecione o nível...</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                        <option value="especialista">Especialista / Arquiteto</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="curriculo">Currículo do Candidato</label>
+                    <textarea id="curriculo" rows="10" placeholder="Cole aqui o texto do currículo..."></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="codigo">Código ou Desafio Técnico</label>
+                    <textarea id="codigo" rows="10" placeholder="Cole aqui o código para análise..."></textarea>
+                </div>
+            </div>
+
+            <button class="btn-analyze">Analisar Candidato</button>
+        </section>
+
+        <section class="results-section">
+            <h2>Resultado da Análise</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>Análise do Código</h3>
+                    <p class="score">92<span>/100</span></p>
+                    <ul>
+                        <li>Qualidade e Boas Práticas: <strong>95</strong></li>
+                        <li>Eficiência e Performance: <strong>88</strong></li>
+                        <li>Segurança: <strong>90</strong></li>
+                        <li>Tratamento de Erros: <strong>95</strong></li>
+                    </ul>
+                </div>
+                <div class="result-card">
+                    <h3>Análise do Currículo</h3>
+                    <p class="score">88<span>/100</span></p>
+                    <ul>
+                        <li>Experiência Relevante: <strong>90</strong></li>
+                        <li>Competências Técnicas: <strong>92</strong></li>
+                        <li>Arquitetura e Design: <strong>80</strong></li>
+                        <li>Habilidades Analíticas: <strong>85</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
