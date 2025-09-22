@@ -1,0 +1,99 @@
+/* Importando uma fonte bonita do Google Fonts para usar no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' );
+
+/* Reset básico e estilos globais para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove margens padrão do navegador */
+    background-color: #f0f2f5; /* Um cinza claro para o fundo, como em muitas telas de login */
+    color: #333; /* Cor do texto principal */
+}
+
+/* Container principal que ocupa a tela inteira e centraliza o conteúdo */
+.login-container {
+    display: flex; /* Ativa o modo flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* 100% da altura da tela */
+}
+
+/* A caixa de login branca */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima da caixa */
+    text-align: center; /* Centraliza todo o texto dentro da caixa */
+}
+
+/* Estilo para o logo */
+.logo {
+    width: 100px; /* Largura do logo */
+    height: 100px; /* Altura do logo */
+    object-fit: cover; /* Garante que a imagem não fique distorcida */
+    border-radius: 50%; /* Deixa o logo redondo, para um visual moderno */
+    margin-bottom: 20px; /* Espaço abaixo do logo */
+}
+
+/* Título "Login do Recrutador" */
+.login-box h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #1c3d5a; /* Um tom de azul escuro */
+}
+
+/* Agrupamento de label e input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alinha o texto dos labels à esquerda */
+}
+
+.input-group label {
+    display: block; /* Faz o label ocupar uma linha inteira */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Campos de texto para usuário e senha */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilo base para os botões */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Mostra a "mãozinha" ao passar o mouse */
+    margin-top: 10px;
+}
+
+/* Botão de confirmação (Entrar) */
+.btn-confirm {
+    background-color: #007bff; /* Azul primário */
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Botão de cancelar */
+.btn-cancel {
+    background-color: #f0f2f5; /* Cinza claro, menos destaque */
+    color: #555;
+}
+
+.btn-cancel:hover {
+    background-color: #e2e6ea; /* Cinza um pouco mais escuro */
+}
